@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif; /* Use a common font for better readability */
+  background-color: #f7f7f7; /* Light background color */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px; /* Limit content width */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 20px; /* Add padding around the content */
+}
+
+.app {
+  padding: 20px; /* Add spacing on left and right sides */
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Automatically adjust column width based on available space */
+  grid-gap: 20px; /* Add gap between columns */
+}
+/*
+.project-panel {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f4f4f4; 
+}
+*/
+
+.project-panel {
+  background-color: #fff; /* White background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+
+.project-panel:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+  border-top-left-radius: 10px; /* Rounded corners for images */
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px; /* Rounded corners for images */
+  border-bottom-right-radius: 10px;
+}
+
+.project-panel .content {
+  padding: 20px; /* Add padding to the content area */
+}
+
+.links {
+  margin-top: 10px; /* Add spacing between links */
+}
+
+.links a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none; /* Remove underline */
+  margin-right: 10px;
+}
+
+.links a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+
+.project {
+  /* Style for the project content */
+}
+
+.links a {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width for smaller screens */
+  }
+}
