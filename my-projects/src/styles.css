@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif; /* Use a common font for better readability */
-  background-color: #f7f7f7; /* Light background color */
+  background-color: #E6D9F7; 
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 1200px; /* Limit content width */
+  max-width: 1800px; /* Limit content width */
   margin: 0 auto; /* Center content horizontally */
   padding: 20px; /* Add padding around the content */
 }
@@ -17,7 +17,7 @@ body {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Automatically adjust column width based on available space */
+  grid-template-columns: repeat(auto-fit, minmax(900px, 1fr)); /* Automatically adjust column width based on available space */
   grid-gap: 20px; /* Add gap between columns */
 }
 /*
@@ -31,11 +31,12 @@ body {
 */
 
 .project-panel {
-  background-color: #fff; /* White background color */
+  background-color: #4A90E2; 
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-right: 40px;
 
 }
 
@@ -64,9 +65,10 @@ body {
 }
 
 .links a {
-  color: #007bff; /* Blue link color */
+  color: #003366; 
   text-decoration: none; /* Remove underline */
   margin-right: 10px;
+  font-weight: bold;
 }
 
 .links a:hover {
